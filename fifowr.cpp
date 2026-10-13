@@ -16,3 +16,4 @@ int main(){
     write(fd,str,strlen(str));
     close(fd);
 }
+//该文件应搭配fiford.cpp使用,如果不搭配,进程就会直接卡死
