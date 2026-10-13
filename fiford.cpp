@@ -15,6 +15,7 @@ int main(){
     char buf[128];
     int n=read(fd,buf,sizeof(buf)-1);
     buf[n]='\0';
-    printf("进程读取到: %s\n",buf);
+    printf("进程读取到: %s\n",buf);//加一个while(true),可以持续化读取输入信息
     close(fd);
 }
+//该文件应搭配fifowr.cpp使用
